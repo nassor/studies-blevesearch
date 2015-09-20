@@ -1,4 +1,4 @@
-# Studie Bleve Search
+# Studying Bleve Search
 
 My studies about [Bleve Search](http://www.blevesearch.com/)
 
