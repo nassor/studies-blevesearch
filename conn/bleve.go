@@ -23,6 +23,6 @@ func Bleve(indexPath string) (bleve.Index, error) {
 		}
 	}
 
-	// return de index
+	// return the index
 	return bleveIdx, nil
 }

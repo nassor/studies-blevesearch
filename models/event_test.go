@@ -38,7 +38,7 @@ func TestFindByAnything(t *testing.T) {
 	idx := idxCreate()
 	indexEvents(idx, eventList)
 
-	// We are looking to a Event with some string which match with dotGo
+	// We are looking to an Event with some string which match with dotGo
 	query := bleve.NewMatchQuery("dotGo")
 	searchRequest := bleve.NewSearchRequest(query)
 	searchResult, err := idx.Search(searchRequest)
