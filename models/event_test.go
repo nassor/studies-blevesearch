@@ -26,7 +26,7 @@ func TestIndexing(t *testing.T) {
 	if err != nil {
 		t.Error("Wasn't possible create the index", err, ballotX)
 	} else {
-		t.Log("Should create a event index", checkMark)
+		t.Log("Should create an event index", checkMark)
 	}
 
 	idxDestroy()
@@ -96,7 +96,7 @@ func idxCreate() bleve.Index {
 	return idx
 }
 
-// create a SQLite3 database file, create a events table and fill with some data.
+// create a SQLite3 database file, create an events table and fill with some data.
 func dbCreate() (gorm.DB, []Event) {
 	db, _ := gorm.Open("sqlite3", dbFile)
 	db.DropTableIfExists(&Event{})
